@@ -13,23 +13,25 @@ directory.  To create the virtualenv it assumes that there is a `python3`
 
 * Prerequisites:
 
-* AWS Account:
+* AWS Account:*
 Ensure that you have an AWS account. If you don't have one, you can create a free-tier account on the AWS website.
 
-*Python and AWS CDK:
+*Python and AWS CDK:*
 Make sure you have Python installed on your machine. You can download Python from the official Python website `(https://www.python.org/downloads/)`. Once Python is installed, 
-you can install the AWS CDK by running the following command:`pip install aws-cdk.core`
-* AWS CLI:
+you can install the AWS CDK by running the following command:
+`pip install aws-cdk.core`
+
+* AWS CLI:*
 Install the AWS Command Line Interface (CLI) on your machine. You can download and install it from the AWS CLI documentation (`https://aws.amazon.com/cli/`).
 
-*Configure AWS CLI:
+*Configure AWS CLI:*
 After installing the AWS CLI, run the following command in your terminal and provide your AWS access key ID, secret access key, default region, and default output format when prompted:
 
 `aws configure`
 
 This step will set up your AWS CLI credentials, allowing you to interact with your AWS account using the CLI.
 
-*Project Setup:
+*Project Setup:*
 
 Make sure you have installed the AWS CDK CLI by running the following command:
 
@@ -37,65 +39,73 @@ Make sure you have installed the AWS CDK CLI by running the following command:
 
 This command installs the AWS CDK globally on your machine.
 
-*Initialize a CDK Project: 
+*Initialize a CDK Project: *
 Open your terminal and navigate to the directory where you want to create your project. Run the following command to initialize a new CDK project:
 
-`cdk init app --language python
+`cdk init app --language python`
 
 This command initializes a new CDK project in Python and sets up the necessary files and folder structure.
 
-*Install CDK Dependencies: 
+*Install CDK Dependencies: *
 Navigate into your project directory and install the required dependencies by running the following command:
 
-`pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 This command will install the AWS CDK module and other dependencies specified in the requirements.txt file.
 
-*Create a CDK Stack:
+*Create a CDK Stack:*
 
  open the `app.py` file in a text editor and replace iam_fleet_role
  
-*IAM Role:
+*IAM Role:*
  
  To create and manage spot fleets using AWS CDK, the IAM role associated with your CDK deployment will need certain permissions. Here are the permissions typically required for creating and managing spot fleets:
 
-*ec2:DescribeSpotFleetInstances: Allows describing spot fleet instances.
-*ec2:DescribeSpotFleetRequests: Allows describing spot fleet requests.
-*ec2:RequestSpotFleet: Allows requesting a new spot fleet.
-*ec2:CancelSpotFleetRequests: Allows canceling spot fleet requests.
-*ec2:ModifySpotFleetRequest: Allows modifying a spot fleet request.
-*ec2:DescribeInstances: Allows describing EC2 instances.
-*ec2:TerminateInstances: Allows terminating EC2 instances (if required).
+*ec2:DescribeSpotFleetInstances: Allows describing spot fleet instances.*
+*ec2:DescribeSpotFleetRequests: Allows describing spot fleet requests.*
+*ec2:RequestSpotFleet: Allows requesting a new spot fleet.*
+*ec2:CancelSpotFleetRequests: Allows canceling spot fleet requests.*
+*ec2:ModifySpotFleetRequest: Allows modifying a spot fleet request.*
+*ec2:DescribeInstances: Allows describing EC2 instances.*
+*ec2:TerminateInstances: Allows terminating EC2 instances (if required).*
 
 Here's an example IAM policy that includes the necessary permissions for creating and managing spot fleets:
  
- `{
-  `"Version": "2012-10-17",
-  `"Statement": [
-    `{
-      `"Sid": "SpotFleetPermissions",
-      `"Effect": "Allow",
-      `"Action": [
-        `"ec2:DescribeSpotFleetInstances",
-        `"ec2:DescribeSpotFleetRequests",
-        `"ec2:RequestSpotFleet",
-        `"ec2:CancelSpotFleetRequests",
-        `"ec2:ModifySpotFleetRequest",
-        `"ec2:DescribeInstances",
-        `"ec2:TerminateInstances"
-      `],
-      `"Resource": "*"
-    `},
-    `{
-      `"Sid": "AutoScalingPermissions",
-      `"Effect": "Allow",
-      `"Action": [
-        `"autoscaling:DescribeAutoScalingGroups",
-        `"autoscaling:UpdateAutoScalingGroup"
-      `],
-      `"Resource": "*"
-    `}
-  `]
+ `{`
+ 
+  `"Version": "2012-10-17",`
+  
+  `"Statement": [`
+  
+    `{`
+	
+      `"Sid": "SpotFleetPermissions",`
+	  
+      `"Effect": "Allow",`
+	  
+      `"Action": [`
+	  
+        `"ec2:DescribeSpotFleetInstances",`
+		
+        `"ec2:DescribeSpotFleetRequests",`
+        `"ec2:RequestSpotFleet",`
+        `"ec2:CancelSpotFleetRequests",`
+        `"ec2:ModifySpotFleetRequest",`
+        `"ec2:DescribeInstances",`
+        `"ec2:TerminateInstances"`
+      `],`
+      `"Resource": "*"`
+    `},`
+    `{`
+      `"Sid": "AutoScalingPermissions",`
+      `"Effect": "Allow",`
+      `"Action": [`
+        `"autoscaling:DescribeAutoScalingGroups",`
+        `"autoscaling:UpdateAutoScalingGroup"`
+      `],`
+      `"Resource": "*"`
+    `}`
+  `]`
 `}`
  
 
