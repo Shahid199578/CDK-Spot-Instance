@@ -70,72 +70,50 @@ This command will install the AWS CDK module and other dependencies specified in
 *ec2:TerminateInstances: Allows terminating EC2 instances (if required).*
 
 Here's an example IAM policy that includes the necessary permissions for creating and managing spot fleets:
+{
+ `{`
  
- `"{
-   "Version": "2012-10-17",
-   "Statement": [
+  `"Version": "2012-10-17",`
+   `"Statement":` [
    {
 	
-      "Sid": "SpotFleetPermissions
-	  
+      "Sid": "SpotFleetPermissions  
       "Effect": "Allow",
-	  
       "Action": [
-	  
         "ec2:DescribeSpotFleetInstances",
-		
         "ec2:DescribeSpotFleetRequests",
-		
         "ec2:RequestSpotFleet",
-		
         "ec2:CancelSpotFleetRequests",
-		
         "ec2:ModifySpotFleetRequest",
-		
         "ec2:DescribeInstances",
-		
         "ec2:TerminateInstances"
-		
       ],
-	  
       "Resource": "*"
-	  
     },
-	
     {
-	
-      "Sid": "AutoScalingPermissions",
-	  
+      "Sid": "AutoScalingPermissions", 
       "Effect": "Allow",
-	  
       "Action": [
-	  
         "autoscaling:DescribeAutoScalingGroups",
-		
         "autoscaling:UpdateAutoScalingGroup"
-		
-      ],
-	  
+      ],  
       "Resource": "*"
-	  
-    }
-	
-  ]
-  
-}"`
+	}
+	]
+  `}`
  
 
 This code defines the SpotInstanceStack class, which creates a VPC, a security group, and an EC2 Spot instance using AWS CDK.
 
 run the following command in your terminal to synthesize the CloudFormation template:
 
-`cdk synth
+`cdk synth`
 
 This command will generate the CloudFormation template for your CDK stack.
 
 *Deploy the Stack:* To deploy the stack to your AWS account, run the following command:
 
-`cdk deploy
+`cdk deploy`
 
 The command will prompt you to confirm the deployment. Type `y` and hit Enter to proceed. AWS CDK will create the necessary resources in your AWS account.
 
