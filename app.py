@@ -23,7 +23,7 @@ class SpotInstanceStack(core.Stack):
         spot_fleet = ec2.CfnSpotFleet(self, 'MySpotFleet',
                                       spot_fleet_request_config_data=ec2.CfnSpotFleet.SpotFleetRequestConfigDataProperty(
                                           target_capacity=1,
-                                          iam_fleet_role='arn:aws:iam::172744412179:role/fleetrole',
+                                          iam_fleet_role='arn:aws:iam::123456789012:role/YourFleetRole',
                                           launch_specifications=[ec2.CfnSpotFleet.SpotFleetLaunchSpecificationProperty(
                                               instance_type='t2.micro',
                                               image_id=ec2.MachineImage.latest_amazon_linux().get_image(self).image_id,
