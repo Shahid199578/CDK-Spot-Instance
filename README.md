@@ -77,8 +77,8 @@ Here's an example IAM policy that includes the necessary permissions for creatin
   
   `"Statement": [`
   
-    `{`
-      `"Sid": "SpotFleetPermissions`
+    `{
+      "Sid": "SpotFleetPermissions
       `"Effect": "Allow",`
       `"Action": [`
         `"ec2:DescribeSpotFleetInstances",`
