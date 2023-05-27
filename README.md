@@ -71,7 +71,7 @@ This command will install the AWS CDK module and other dependencies specified in
 
 Here's an example IAM policy that includes the necessary permissions for creating and managing spot fleets:
  
- `{
+ `{`
   `"Version": "2012-10-17",
   `"Statement": [
     `{
