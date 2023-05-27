@@ -70,11 +70,12 @@ This command will install the AWS CDK module and other dependencies specified in
 *ec2:TerminateInstances: Allows terminating EC2 instances (if required).*
 
 Here's an example IAM policy that includes the necessary permissions for creating and managing spot fleets:
-{
- `{`
+
+
  
-  `"Version": "2012-10-17",`
-   `"Statement":` [
+   {
+	"Version": "2012-10-17",
+    "Statement": [
    {
 	
       "Sid": "SpotFleetPermissions  
@@ -100,7 +101,7 @@ Here's an example IAM policy that includes the necessary permissions for creatin
       "Resource": "*"
 	}
 	]
-  `}`
+	}
  
 
 This code defines the SpotInstanceStack class, which creates a VPC, a security group, and an EC2 Spot instance using AWS CDK.
