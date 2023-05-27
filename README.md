@@ -74,8 +74,11 @@ Here's an example IAM policy that includes the necessary permissions for creatin
 
  
    {
+   
    "Version": "2012-10-17",
-   "Statement": [
+   
+   "Statement":
+   [
     {
 	
       "Sid": "SpotFleetPermissions  
