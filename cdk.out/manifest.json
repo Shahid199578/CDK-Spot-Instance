@@ -1,0 +1,570 @@
+{
+  "version": "21.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "SpotInstanceStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "SpotInstanceStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/SpotInstanceStack/MyVPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCAFB07A31",
+            "trace": [
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:405:25)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPublicSubnet1Subnet0C75866A",
+            "trace": [
+              "new Subnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:783:24)",
+              "new PublicSubnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:987:9)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:679:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:653:32)",
+              "Vpc.createSubnets (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:649:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:431:14)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPublicSubnet1RouteTable538A9511",
+            "trace": [
+              "new Subnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:799:23)",
+              "new PublicSubnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:987:9)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:679:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:653:32)",
+              "Vpc.createSubnets (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:649:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:431:14)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPublicSubnet1RouteTableAssociation8A950D8E",
+            "trace": [
+              "new Subnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:804:9)",
+              "new PublicSubnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:987:9)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:679:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:653:32)",
+              "Vpc.createSubnets (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:649:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:431:14)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPublicSubnet1DefaultRouteAF81AA9B",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:840:23)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:443:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:442:32)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPublicSubnet1EIP5EB6147D",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:1019:46)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:107:33)",
+              "Vpc.createNatGateways (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:627:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:448:22)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPublicSubnet1NATGateway838228A5",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:1017:21)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:107:33)",
+              "Vpc.createNatGateways (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:627:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:448:22)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPublicSubnet2Subnet4DDFF14C",
+            "trace": [
+              "new Subnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:783:24)",
+              "new PublicSubnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:987:9)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:679:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:653:32)",
+              "Vpc.createSubnets (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:649:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:431:14)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPublicSubnet2RouteTableA6A1CD3D",
+            "trace": [
+              "new Subnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:799:23)",
+              "new PublicSubnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:987:9)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:679:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:653:32)",
+              "Vpc.createSubnets (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:649:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:431:14)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPublicSubnet2RouteTableAssociationF22D63CA",
+            "trace": [
+              "new Subnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:804:9)",
+              "new PublicSubnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:987:9)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:679:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:653:32)",
+              "Vpc.createSubnets (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:649:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:431:14)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPublicSubnet2DefaultRoute24460202",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:840:23)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:443:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:442:32)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPublicSubnet2EIP6F364C5D",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:1019:46)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:107:33)",
+              "Vpc.createNatGateways (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:627:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:448:22)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPublicSubnet2NATGateway4D6E78B8",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:1017:21)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:107:33)",
+              "Vpc.createNatGateways (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:627:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:448:22)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPrivateSubnet1Subnet641543F4",
+            "trace": [
+              "new Subnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:783:24)",
+              "new PrivateSubnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:1034:9)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:685:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:653:32)",
+              "Vpc.createSubnets (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:649:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:431:14)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPrivateSubnet1RouteTable133BD901",
+            "trace": [
+              "new Subnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:799:23)",
+              "new PrivateSubnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:1034:9)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:685:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:653:32)",
+              "Vpc.createSubnets (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:649:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:431:14)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPrivateSubnet1RouteTableAssociation85DFBFBB",
+            "trace": [
+              "new Subnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:804:9)",
+              "new PrivateSubnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:1034:9)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:685:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:653:32)",
+              "Vpc.createSubnets (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:649:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:431:14)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPrivateSubnet1DefaultRouteA8EE6636",
+            "trace": [
+              "PrivateSubnet.addRoute (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:890:23)",
+              "NatGatewayProvider.configureSubnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:119:16)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:113:18)",
+              "Vpc.createNatGateways (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:627:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:448:22)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPrivateSubnet2SubnetA420D3F0",
+            "trace": [
+              "new Subnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:783:24)",
+              "new PrivateSubnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:1034:9)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:685:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:653:32)",
+              "Vpc.createSubnets (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:649:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:431:14)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPrivateSubnet2RouteTableDF3CB76C",
+            "trace": [
+              "new Subnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:799:23)",
+              "new PrivateSubnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:1034:9)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:685:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:653:32)",
+              "Vpc.createSubnets (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:649:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:431:14)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPrivateSubnet2RouteTableAssociationC373B6FE",
+            "trace": [
+              "new Subnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:804:9)",
+              "new PrivateSubnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:1034:9)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:685:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:653:32)",
+              "Vpc.createSubnets (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:649:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:431:14)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCPrivateSubnet2DefaultRoute37F90B5D",
+            "trace": [
+              "PrivateSubnet.addRoute (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:890:23)",
+              "NatGatewayProvider.configureSubnet (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:119:16)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:113:18)",
+              "Vpc.createNatGateways (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:627:18)",
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:448:22)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCIGW30AB6DD6",
+            "trace": [
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:435:25)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MyVPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVPCVPCGWE6F260E1",
+            "trace": [
+              "new Vpc (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:438:25)",
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MySecurityGroup": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySecurityGroup",
+            "trace": [
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/SSHAccess": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SSHAccess",
+            "trace": [
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/SsmParameterValue:--aws--service--ami-amazon-linux-latest--amzn-ami-hvm-x86_64-gp2:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceamiamazonlinuxlatestamznamihvmx8664gp2C96584B6F00A464EAD1953AFF4B05118Parameter",
+            "trace": [
+              "StringParameter.fromStringParameterAttributes (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ssm\\lib\\parameter.js:169:15)",
+              "StringParameter.valueForTypedStringParameter (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ssm\\lib\\parameter.js:255:21)",
+              "lookupImage (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\machine-image.js:631:31)",
+              "AmazonLinuxImage.getImage (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\aws-ec2\\lib\\machine-image.js:376:25)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9769:105",
+              "Kernel._ensureSync (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:10358:28)",
+              "Kernel.invoke (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9769:34)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/MySpotFleet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySpotFleet",
+            "trace": [
+              "Kernel._create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9964:29)",
+              "Kernel.create (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9693:29)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:22:30)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:139:9",
+              "visit (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:200:9)",
+              "visit (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:197:9)",
+              "injectMetadataResources (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:128:5)",
+              "Object.synthesize (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:17:5)",
+              "App.synth (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\core\\lib\\stage.js:104:41)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9769:105",
+              "Kernel._ensureSync (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:10358:28)",
+              "Kernel.invoke (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9769:34)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ],
+        "/SpotInstanceStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:30:35)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:139:9",
+              "visit (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:200:9)",
+              "visit (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:197:9)",
+              "injectMetadataResources (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:128:5)",
+              "Object.synthesize (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:17:5)",
+              "App.synth (C:\\Users\\Shahid\\AppData\\Local\\Temp\\jsii-kernel-PImsml\\node_modules\\@aws-cdk\\core\\lib\\stage.js:104:41)",
+              "C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9769:105",
+              "Kernel._ensureSync (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:10358:28)",
+              "Kernel.invoke (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:9769:34)",
+              "KernelHost.processRequest (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11544:36)",
+              "KernelHost.run (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11504:22)",
+              "Immediate._onImmediate (C:\\Users\\Shahid\\AppData\\Local\\Temp\\tmp2u9moy2w\\lib\\program.js:11505:46)",
+              "process.processImmediate (node:internal/timers:476:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "SpotInstanceStack"
+    }
+  }
+}
