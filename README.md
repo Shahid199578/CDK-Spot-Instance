@@ -135,5 +135,6 @@ Note: Remember to clean up your resources after you have finished experimenting 
  * `cdk deploy`      deploy this stack to your default AWS account/region
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
+ * `cdk destroy`     Destroy Created Resource
 
 Enjoy!
