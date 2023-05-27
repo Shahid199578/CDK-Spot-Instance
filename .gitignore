@@ -1,0 +1,13 @@
+*.swp
+package-lock.json
+__pycache__
+.pytest_cache
+.venv
+
+
+# CDK asset staging directory
+.cdk.staging
+cdk.txt
+.cdk.out
+requirements.txt
+requirements-dev.txt
